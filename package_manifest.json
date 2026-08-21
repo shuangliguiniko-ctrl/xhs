@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.1",
+  "name": "new-xhs-research",
+  "version": "1.0.0",
+  "built_at": "2026-08-17T08:35:48.250109+00:00",
+  "archive_layout": "flat ZIP root with SKILL.md",
+  "top_level_directories": [
+    "agents",
+    "assets",
+    "references",
+    "scripts"
+  ],
+  "child_skills": [
+    "environment-diagnostics",
+    "evidence-validator",
+    "html-report-generator",
+    "opinion-analysis-engine",
+    "opinion-data-cleaner",
+    "predictive-modeler",
+    "research-brief-builder",
+    "user-insight-synthesizer",
+    "xhs-crawler-planner",
+    "xhs-data-collector"
+  ],
+  "python": ">=3.11,<3.15",
+  "external_components": {
+    "MediaCrawler": {
+      "bundled": false,
+      "reason": "Non-transferable, non-commercial learning license",
+      "url": "https://github.com/NanmiCoder/MediaCrawler"
+    }
+  },
+  "excluded": [
+    "credentials",
+    "cookies",
+    "tokens",
+    "personal data",
+    "raw study data",
+    "reports",
+    "bytecode",
+    "caches"
+  ]
+}

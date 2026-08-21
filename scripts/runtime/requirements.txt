@@ -1,0 +1,10 @@
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.5
+jieba==0.42.1
+PyYAML>=6.0.3
+openpyxl>=3.1.5
+pyarrow>=23.0.1
+requests>=2.33.0
+streamlit>=1.54.0
+plotly>=6.0

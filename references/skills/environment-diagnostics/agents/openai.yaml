@@ -1,0 +1,4 @@
+interface:
+  display_name: "环境诊断器"
+  short_description: "Checks core, semantic, UI, browser, and crawler readiness"
+  default_prompt: "Use $environment-diagnostics to diagnose this cockpit environment."

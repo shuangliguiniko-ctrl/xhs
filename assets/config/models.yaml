@@ -1,0 +1,14 @@
+external_llm:
+  provider: none
+  endpoint: null
+  model: null
+  api_key_env: OPINION_LLM_API_KEY
+  tls_verify: true
+  authorized: false
+  allowed_text: none
+  cache: true
+  retries: 2
+  timeout_seconds: 120
+semantic:
+  embedding_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  local_only: true

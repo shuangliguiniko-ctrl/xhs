@@ -1,0 +1,5 @@
+interface:
+  display_name: "New XHS Research"
+  short_description: "AI 与 UI 双模式的小红书舆情研究、分析和报告工作台"
+  brand_color: "#5B5CE2"
+  default_prompt: "Use $new-xhs-research to start a guided Xiaohongshu research study by asking for AI or UI mode first."

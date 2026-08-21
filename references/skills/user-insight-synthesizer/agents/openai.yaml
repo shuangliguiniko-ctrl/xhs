@@ -1,0 +1,4 @@
+interface:
+  display_name: "用户洞察合成器"
+  short_description: "Synthesizes scoped user insights from validated evidence"
+  default_prompt: "Use $user-insight-synthesizer to create evidence-backed user insights."

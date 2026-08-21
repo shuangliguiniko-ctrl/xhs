@@ -1,0 +1,11 @@
+adapter: mock
+mode_presets:
+  quick: {max_notes: 300, include_comments: false, include_sub_comments: false}
+  standard: {max_notes: 1500, include_comments: true, include_sub_comments: false}
+  deep: {max_notes: 3000, include_comments: true, include_sub_comments: true}
+allowed_adapters: [mock, import, browseract, mediacrawler, hybrid]
+compliance:
+  bypass_verification: false
+  bypass_access_controls: false
+  data_minimization: true
+  persist_every_note: true

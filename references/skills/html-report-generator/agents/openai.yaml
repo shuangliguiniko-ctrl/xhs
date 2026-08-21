@@ -1,0 +1,4 @@
+interface:
+  display_name: "HTML 报告生成器"
+  short_description: "Builds self-contained interactive evidence-led HTML reports"
+  default_prompt: "Use $html-report-generator to generate and verify a self-contained research report."

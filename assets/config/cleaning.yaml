@@ -1,0 +1,8 @@
+normalize_unicode: true
+preserve_emoji: true
+traditional_to_simplified: false
+mask_patterns: [phone, email, account, tokenized_url]
+marketing_terms: [广告, 商务合作, 优惠码, 加微信, 私信下单, 领券, 全网最低, 购买链接, 团购, 返现]
+marketing_disclosure_terms: [合作, 推广, 赞助, 品牌邀请, 体验官]
+review_band: {marketing_low: 0.35, marketing_high: 0.55, relevance_low: 0.20, relevance_high: 0.35}
+near_duplicate: {algorithm: simhash, threshold: 0.92, keep: highest_engagement}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "证据校验器"
+  short_description: "Checks claims against counts, row IDs, excerpts, and scope"
+  default_prompt: "Use $evidence-validator to validate every major finding against source evidence."

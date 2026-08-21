@@ -1,0 +1,4 @@
+interface:
+  display_name: "小红书数据采集器"
+  short_description: "Collects or imports resumable Xiaohongshu research records"
+  default_prompt: "Use $xhs-data-collector to collect or import authorized Xiaohongshu data."

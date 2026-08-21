@@ -1,0 +1,18 @@
+mode_choices:
+  fast: Local TF-IDF, MiniBatch K-Means and sklearn LDA; deterministic and CPU-friendly.
+  semantic: Local multilingual embeddings and BERTopic/HDBSCAN; slower and requires optional dependencies/model download.
+  auto: Explicitly delegate engine selection based on corpus size and installed dependencies; actual mode is recorded.
+profile_choices:
+  rapid: Descriptive, keywords, baseline sentiment and risk triage.
+  discovery: Exploratory topic discovery with row-linked representatives.
+  aspect: Known aspect by sentiment, emotion, and scenario analysis.
+  experience: Six-dimension user research extraction, themes, HMW, and opportunity matrix.
+  comparative: Keyword, source, record-type, or time cohort comparisons.
+  network: Feature, pain, and need co-occurrence graph.
+  predictive: Leakage-aware supervised modeling with honest holdout evaluation.
+  mixed: A declared list of profiles; selected and skipped modules are recorded.
+sentiment_labels: [正向, 中性, 负向, 混合, 无法判断]
+small_denominator: 30
+risk_burst_z: 2.5
+topic_review_examples: 5
+confidence_floor: 0.50

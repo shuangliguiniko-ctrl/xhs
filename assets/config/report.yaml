@@ -1,0 +1,5 @@
+self_contained: true
+external_cdn: false
+sections: [执行摘要, 数据与方法, 数据质量, 讨论全景, 主题, 情感情绪, 功能与场景, 趋势风险, 用户洞察, 产品机会, 代表性原文, 研究局限]
+interactions: [search, topic_filter, sentiment_filter, record_type_filter, table_sort, evidence_expand, theme_toggle, copy_result, data_download]
+visual_style: {mesh_gradient: true, glass_cards: true, whitespace: generous, max_content_width: 1440}

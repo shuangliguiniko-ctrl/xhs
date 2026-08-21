@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "new-xhs-research"
+version = "1.0.0"
+description = "Five-step AI and UI Xiaohongshu research, collection, analysis and reporting"
+requires-python = ">=3.11,<3.15"
+license = {text = "MIT"}
+dependencies = [
+  "pandas>=2.2",
+  "numpy>=1.26",
+  "scikit-learn>=1.5",
+  "jieba==0.42.1",
+  "PyYAML>=6.0.3",
+  "openpyxl>=3.1.5",
+  "pyarrow>=23.0.1",
+  "requests>=2.33.0",
+]
+
+[project.optional-dependencies]
+ui = ["streamlit>=1.54.0", "plotly>=6.0"]
+semantic = ["sentence-transformers>=5.0", "bertopic>=0.17.4", "umap-learn>=0.5.9", "hdbscan>=0.8.40", "ruptures>=1.1.10"]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+new-xhs-research = "userresearch_xhscrawler_cockpitux.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Predictive Modeler"
+  short_description: "面向小红书研究数据的防泄漏预测建模与留出集解释"
+  default_prompt: "使用 $predictive-modeler 审计并运行一个可复核的预测模型。"

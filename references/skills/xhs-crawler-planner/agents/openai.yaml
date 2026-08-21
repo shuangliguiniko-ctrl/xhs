@@ -1,0 +1,4 @@
+interface:
+  display_name: "小红书采集规划器"
+  short_description: "Plans compliant keywords, sampling, fields, and comments"
+  default_prompt: "Use $xhs-crawler-planner to design my Xiaohongshu crawl plan."

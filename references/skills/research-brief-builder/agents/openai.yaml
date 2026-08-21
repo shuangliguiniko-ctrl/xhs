@@ -1,0 +1,4 @@
+interface:
+  display_name: "研究 Brief 构建器"
+  short_description: "Builds confirmed, auditable social-research briefs"
+  default_prompt: "Use $research-brief-builder to create and confirm my research brief."

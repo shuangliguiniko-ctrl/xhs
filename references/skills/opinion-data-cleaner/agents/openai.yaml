@@ -1,0 +1,4 @@
+interface:
+  display_name: "舆情数据清洗器"
+  short_description: "Cleans, deduplicates, scores, and audits opinion data"
+  default_prompt: "Use $opinion-data-cleaner to clean and quality-check my opinion data."

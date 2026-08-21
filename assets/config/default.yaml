@@ -1,0 +1,94 @@
+schema_version: "1.0"
+workflow:
+  mode: null
+project:
+  name: demo-xhs
+  output_root: outputs
+  execution_mode: session
+  resume: true
+brief:
+  confirmed: false
+  auto_fields: []
+  project: {}
+  source: {}
+  ai_labels: {}
+  insights: {}
+  focus_rules: {}
+  prompts: {}
+  output: {}
+crawler:
+  adapter: mock
+  mode: quick
+  plan_confirmed: false
+  keywords: []
+  excluded_keywords: []
+  max_notes: 200
+  max_notes_per_keyword: 20
+  include_comments: true
+  include_sub_comments: false
+  max_comments_per_note: 20
+  concurrency: 1
+  request_interval_seconds: [2.0, 5.0]
+  retries: 3
+  download_media: false
+  retain_author_fields: false
+  input_path: null
+  browseract_input_path: null
+  mediacrawler_input_path: null
+  mediacrawler_path: null
+  mediacrawler_python: null
+cleaning:
+  text_columns: [title, content]
+  time_column: publish_time
+  exact_dedup_keys: [source_platform, content_id]
+  near_duplicate_threshold: 0.92
+  redact_pii: true
+  marketing_threshold: 0.55
+  relevance_threshold: 0.35
+analysis:
+  mode: null
+  profile: null
+  profiles: [rapid, discovery, aspect, experience, comparative, network]
+  topic_engine: fast
+  topic_scope: posts
+  topic_count: 0
+  min_topic_size: 5
+  embedding_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  modules: [descriptive, keywords, topics, sentiment, emotion, brand, feature, scenario, purpose, trend, risk]
+  subject: ""
+  competitors: []
+  evidence_minimum: 3
+  taxonomy: {}
+  sentiment:
+    positive_terms: []
+    negative_terms: []
+  comparative:
+    group_columns: [source_keyword, record_type]
+  network:
+    label_columns: [feature_labels, pain_point_labels, need_labels]
+    min_edge_count: 2
+  predictive:
+    enabled: false
+    task: null
+    target: null
+    features: []
+    split: auto
+    time_column: publish_time
+    group_column: null
+    test_size: 0.20
+    minimum_rows: 80
+    minimum_class_rows: 20
+llm:
+  provider: none
+  endpoint: null
+  model: null
+  api_key_env: OPINION_LLM_API_KEY
+  authorized: false
+  allowed_text: none
+  max_rows: 0
+report:
+  title: 小红书用户研究与舆情洞察报告
+  audience: 产品、用户研究与品牌团队
+  redact_evidence: true
+  dark_mode: true
+  embed_data: true

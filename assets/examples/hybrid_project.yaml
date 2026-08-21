@@ -1,0 +1,22 @@
+workflow: {mode: ai}
+project: {name: hybrid-xhs-demo, output_root: outputs, execution_mode: session}
+brief:
+  confirmed: true
+  auto_fields: [project, source, ai_labels, insights, focus_rules, prompts, output]
+crawler:
+  adapter: hybrid
+  mode: quick
+  plan_confirmed: true
+  browseract_input_path: assets/examples/sample_browseract.jsonl
+  mediacrawler_input_path: assets/examples/sample_mediacrawler
+  keywords: [智能座舱 HUD, 智能座舱 仪表盘]
+  max_notes: 20
+  include_comments: true
+analysis:
+  subject: 智能座舱仪表盘与 HUD
+  mode: fast
+  profile: mixed
+  profiles: [rapid, aspect, experience, comparative]
+  evidence_minimum: 2
+llm: {provider: none, authorized: false, allowed_text: none, max_rows: 0}
+report: {title: 混合采集能力验证报告, audience: 产品与用户研究团队, redact_evidence: true}

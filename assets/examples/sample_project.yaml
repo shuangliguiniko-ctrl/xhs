@@ -1,0 +1,52 @@
+workflow:
+  mode: ai
+project:
+  name: demo-xhs
+  output_root: outputs
+  execution_mode: full-auto
+  resume: true
+brief:
+  confirmed: true
+  auto_fields: [project, source, ai_labels, insights, focus_rules, prompts, output]
+  project: {}
+  source: {}
+  ai_labels: {}
+  insights: {}
+  focus_rules: {}
+  prompts: {}
+  output: {}
+crawler:
+  adapter: mock
+  mode: quick
+  keywords: [智能座舱宠物主题, 车机萌宠, OTA宠物屏保]
+  excluded_keywords: [宠物医院]
+  max_notes: 48
+  include_comments: true
+  include_sub_comments: false
+  max_comments_per_note: 5
+  concurrency: 1
+  request_interval_seconds: [2.0, 5.0]
+  retries: 3
+  retain_author_fields: false
+analysis:
+  subject: 智能座舱宠物主题
+  competitors: [小米, 蔚来, 比亚迪, 理想]
+  mode: fast
+  profile: mixed
+  profiles: [rapid, discovery, aspect, experience, comparative, network]
+  topic_engine: fast
+  topic_count: 0
+  evidence_minimum: 3
+  comparative:
+    group_columns: [source_keyword, record_type]
+  predictive:
+    enabled: false
+llm:
+  provider: none
+  authorized: false
+  allowed_text: none
+  max_rows: 0
+report:
+  title: 智能座舱宠物主题 · 小红书用户研究报告
+  audience: 产品、座舱体验、用户研究与品牌团队
+  redact_evidence: true

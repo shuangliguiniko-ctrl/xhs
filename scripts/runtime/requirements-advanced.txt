@@ -1,0 +1,5 @@
+sentence-transformers>=5.0
+bertopic>=0.17.4
+umap-learn>=0.5.9
+hdbscan>=0.8.40
+ruptures>=1.1.10

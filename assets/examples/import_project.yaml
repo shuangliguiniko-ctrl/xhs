@@ -1,0 +1,13 @@
+workflow: {mode: ai}
+project: {name: imported-xhs, output_root: outputs, execution_mode: session}
+brief:
+  confirmed: true
+  auto_fields: [project, source, ai_labels, insights, focus_rules, prompts, output]
+crawler:
+  adapter: import
+  input_path: assets/examples/sample_posts.csv
+  keywords: [宠物主题, 车机]
+  max_notes: 100
+  include_comments: false
+analysis: {subject: 智能座舱宠物主题, mode: fast, profile: rapid, topic_engine: fast, evidence_minimum: 2}
+llm: {provider: none, authorized: false, allowed_text: none, max_rows: 0}

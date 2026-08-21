@@ -1,0 +1,4 @@
+interface:
+  display_name: "舆情分析引擎"
+  short_description: "Runs local topics, sentiment, aspects, trends, and risks"
+  default_prompt: "Use $opinion-analysis-engine to analyze cleaned data with an explicit topic mode."
