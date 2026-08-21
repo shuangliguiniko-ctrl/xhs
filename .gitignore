@@ -1,0 +1,29 @@
+.DS_Store
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Runtime outputs and local project data
+outputs/
+projects/
+*.log
+*.sqlite
+*.db
+
+# Local secrets and session state
+.env
+.env.*
+!.env.example
+*cookie*
+*token*
+*session*
+
+# Optional external crawler checkout/results are not bundled
+MediaCrawler/
+mediacrawler/
+
